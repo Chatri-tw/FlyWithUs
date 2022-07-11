@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyWithUsConsumer", "FlyWit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyWithUsConsumerTest", "FlyWithUsConsumerTest\FlyWithUsConsumerTest.csproj", "{1D4D4945-7140-49B0-AA70-9373612576BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyWithUsProviderTest", "FlyWithUsProviderTest\FlyWithUsProviderTest.csproj", "{C8FF1AA1-05DC-4893-AC69-4BAF1824EA7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{1D4D4945-7140-49B0-AA70-9373612576BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D4D4945-7140-49B0-AA70-9373612576BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D4D4945-7140-49B0-AA70-9373612576BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8FF1AA1-05DC-4893-AC69-4BAF1824EA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8FF1AA1-05DC-4893-AC69-4BAF1824EA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8FF1AA1-05DC-4893-AC69-4BAF1824EA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8FF1AA1-05DC-4893-AC69-4BAF1824EA7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

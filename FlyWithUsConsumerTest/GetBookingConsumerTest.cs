@@ -24,14 +24,14 @@ public class GetBookingConsumerTest
     [Fact]
     public async Task GetBooking_WhenPnrExisted_ReturnBooking()
     {
-        _pactBuilder.UponReceiving("blah blah blah")
+        _pactBuilder.UponReceiving("A GET request to fetch a booking")
             // .Given("PNR existed")
             .WithRequest(HttpMethod.Get, "/booking")
             .WillRespond()
             .WithStatus(HttpStatusCode.OK)
             .WithJsonBody(new
             {
-                PNR = Match.Type("ABC12")
+                pnr = Match.Type("ABC12")
             });
         
         await _pactBuilder.VerifyAsync(async ctx =>

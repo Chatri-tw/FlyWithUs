@@ -1,6 +1,8 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fe01f828_002Dcb85_002D4874_002D8895_002D49c67d8b3277/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetBooking_WhenPnrExisted_ReturnBooking" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::1D4D4945-7140-49B0-AA70-9373612576BB::net6.0::FlyWithUsConsumerTest.GetBookingConsumerTest.GetBooking_WhenPnrExisted_ReturnBooking&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fe01f828_002Dcb85_002D4874_002D8895_002D49c67d8b3277/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetBooking_WhenPnrExisted_ReturnBooking" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::1D4D4945-7140-49B0-AA70-9373612576BB::net6.0::FlyWithUsConsumerTest.GetBookingConsumerTest.GetBooking_WhenPnrExisted_ReturnBooking&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::C8FF1AA1-05DC-4893-AC69-4BAF1824EA7E::net6.0::FlyWithUsProviderTest.GetBookingProviderTest.Test&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::C8FF1AA1-05DC-4893-AC69-4BAF1824EA7E::net6.0::FlyWithUsProviderTest.GetBookingProviderTest.EnsureGetBookingApiPacts&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
