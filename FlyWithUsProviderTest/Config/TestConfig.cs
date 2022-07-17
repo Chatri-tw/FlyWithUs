@@ -23,7 +23,7 @@ public static class TestConfig
         return  $"{PactRoot}{pactName}.json";
     }
 
-    public static IPactVerifierSource GetPactVerifierSource(ITestOutputHelper output, string pactName)
+    public static IPactVerifierSource GetPactVerifierSource(ITestOutputHelper output, string providerName)
     {
         var config = new PactVerifierConfig
         {
@@ -39,10 +39,16 @@ public static class TestConfig
         };
         
         IPactVerifier pactVerifier = new PactVerifier(config);
-        //Check if this code is running in CI/CD pipeline
         return pactVerifier
-            .ServiceProvider("FlyWithMeProvider", new Uri("http://localhost:5012"))
-            .WithFileSource(new FileInfo(GetPactPath(pactName)))
-            .WithRequestTimeout(RequestTimeout);
+            .ServiceProvider(providerName, new Uri("http://localhost:5012"))
+            .WithPactBrokerSource(new Uri("http://localhost:9292"),
+                options =>
+                {
+                    options.PublishResults("0.0.1", publishOptions =>
+                    {
+                        publishOptions.ProviderBranch("main").BuildUri(
+                            new Uri("https://example.com/"));
+                    });
+                });
     }
 }

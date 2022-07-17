@@ -17,7 +17,7 @@ public class GetBookingProviderTest
     [Fact]
     public void EnsureGetBookingApiPacts()
     {
-        var pactVerifier = TestConfig.GetPactVerifierSource(_output, "Avenger-GetBooking");
+        var pactVerifier = TestConfig.GetPactVerifierSource(_output, "FlyWithMeGetBooking");
         //Act, Assert
         pactVerifier
             .Verify();
