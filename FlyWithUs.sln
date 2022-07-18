@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KioskConsumer", "KioskConsu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KioskConsumerTest", "KioskConsumerTest\KioskConsumerTest.csproj", "{0085A8DE-1B6C-448C-B4C1-BC8DACAF00C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileAppConsumer", "MobileAppConsumer\MobileAppConsumer.csproj", "{6DF84255-380D-4E29-B637-851215999D85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileAppConsumerTest", "MobileAppConsumerTest\MobileAppConsumerTest.csproj", "{6920B357-7E7C-42DF-9839-D754A0F13549}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +46,13 @@ Global
 		{0085A8DE-1B6C-448C-B4C1-BC8DACAF00C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0085A8DE-1B6C-448C-B4C1-BC8DACAF00C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0085A8DE-1B6C-448C-B4C1-BC8DACAF00C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DF84255-380D-4E29-B637-851215999D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DF84255-380D-4E29-B637-851215999D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DF84255-380D-4E29-B637-851215999D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DF84255-380D-4E29-B637-851215999D85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6920B357-7E7C-42DF-9839-D754A0F13549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6920B357-7E7C-42DF-9839-D754A0F13549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6920B357-7E7C-42DF-9839-D754A0F13549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6920B357-7E7C-42DF-9839-D754A0F13549}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

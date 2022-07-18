@@ -45,7 +45,7 @@ public static class TestConfig
                 options =>
                 {
                     options.ConsumerVersionSelectors(new ConsumerVersionSelector { Consumer = consumerName, Latest = true });
-                    options.PublishResults("0.0.3", publishOptions =>
+                    options.PublishResults("0.0.4", publishOptions =>
                     {
                         publishOptions.ProviderBranch("main").BuildUri(
                             new Uri("https://example.com/"));

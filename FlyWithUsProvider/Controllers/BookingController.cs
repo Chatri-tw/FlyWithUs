@@ -16,9 +16,9 @@ public class BookingController : ControllerBase
         _logger = logger;
         _bookings = new List<Booking>
         {
-            new Booking{PNR = "BNK48", Firstname = "Alice"},
-            new Booking{PNR = "AKB48", Firstname = "Bob"},
-            new Booking{PNR = "RGB72", Firstname = "Takachi"}
+            new Booking{PNR = "BNK48", Firstname = "Alice", DepartureTime = DateTimeOffset.UtcNow},
+            new Booking{PNR = "AKB48", Firstname = "Bob", DepartureTime = DateTimeOffset.UtcNow},
+            new Booking{PNR = "RGB72", Firstname = "Takachi", DepartureTime = DateTimeOffset.UtcNow}
         };
     }
 

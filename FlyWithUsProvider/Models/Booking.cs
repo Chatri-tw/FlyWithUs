@@ -4,4 +4,5 @@ public class Booking
 {
     public string PNR { get; set; }
     public string Firstname { get; set; }
+    public DateTimeOffset DepartureTime { get; set; }
 }

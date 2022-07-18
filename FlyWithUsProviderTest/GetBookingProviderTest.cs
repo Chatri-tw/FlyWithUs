@@ -31,4 +31,13 @@ public class GetBookingProviderTest
         pactVerifier
             .Verify();
     }
+    
+    [Fact]
+    public void EnsureEventApiHonoursPactWithMobileApp()
+    {
+        var pactVerifier = TestConfig.GetPactVerifierSource(_output, "FlyWithMeGetBooking", "MobileApp");
+        //Act, Assert
+        pactVerifier
+            .Verify();
+    }
 }

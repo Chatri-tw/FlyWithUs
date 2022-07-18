@@ -6,6 +6,7 @@
       &lt;TestId&gt;xUnit::C8FF1AA1-05DC-4893-AC69-4BAF1824EA7E::net6.0::FlyWithUsProviderTest.GetBookingProviderTest.Test&lt;/TestId&gt;
       &lt;TestId&gt;xUnit::C8FF1AA1-05DC-4893-AC69-4BAF1824EA7E::net6.0::FlyWithUsProviderTest.GetBookingProviderTest.EnsureGetBookingApiPacts&lt;/TestId&gt;
       &lt;TestId&gt;xUnit::9652851A-6F1E-44BC-8A7C-E99A692B1BEF::net6.0::CounterConsumerTest.GetBookingConsumerTest&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::6920B357-7E7C-42DF-9839-D754A0F13549::net6.0::MobileAppConsumerTest.GetBookingConsumerTest.GetBooking_WhenPnrExisted_ReturnBooking&lt;/TestId&gt;
     &lt;/TestAncestor&gt;
     &lt;Project Location="/Users/chatri.tung/git/FlyWithUs/KioskConsumerTest" Presentation="&amp;lt;KioskConsumerTest&amp;gt;" /&gt;
     &lt;Project Location="/Users/chatri.tung/git/FlyWithUs/FlyWithUsProviderTest" Presentation="&amp;lt;FlyWithUsProviderTest&amp;gt;" /&gt;
