@@ -23,6 +23,7 @@ public class GetBookingProviderTest
             .Verify();
     }
     
+    [Fact]
     public void EnsureEventApiHonoursPactWithCounterCheckin()
     {
         var pactVerifier = TestConfig.GetPactVerifierSource(_output, "FlyWithMeGetBooking", "CounterCheckin");

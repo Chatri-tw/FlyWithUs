@@ -25,6 +25,7 @@ public class GetBookingConsumerTest
         _pactBuilder.UponReceiving("A GET request to fetch a booking")
             // .Given("PNR existed")
             .WithRequest(HttpMethod.Get, "/booking/BNK48")
+            .WithQuery("firstname", "Alice")
             .WillRespond()
             .WithStatus(HttpStatusCode.OK)
             .WithJsonBody(new
@@ -36,7 +37,7 @@ public class GetBookingConsumerTest
         {
             // Act
             var client = new FlyWithUsClient(ctx.MockServerUri);
-            await client.GetBooking("BNK48");
+            await client.GetBookingByFirstName("BNK48", "Alice");
         });
     }
 }

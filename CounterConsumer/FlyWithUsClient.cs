@@ -11,9 +11,9 @@ public class FlyWithUsClient
         _httpClient = new HttpClient{BaseAddress = baseUri};
     }
 
-    public async Task<Booking> GetBooking(string pnr)
+    public async Task<Booking> GetBookingByFirstName(string pnr, string firstname)
     {
-        var request = new HttpRequestMessage(HttpMethod.Get, $"booking/{pnr}");
+        var request = new HttpRequestMessage(HttpMethod.Get, $"booking/{pnr}?firstname={firstname}");
         var response = await _httpClient.SendAsync(request);
         
         response.EnsureSuccessStatusCode();

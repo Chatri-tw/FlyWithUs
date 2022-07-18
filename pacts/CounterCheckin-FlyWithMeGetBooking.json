@@ -7,7 +7,12 @@
       "description": "A GET request to fetch a booking",
       "request": {
         "method": "GET",
-        "path": "/booking/BNK48"
+        "path": "/booking/BNK48",
+        "query": {
+          "firstname": [
+            "Alice"
+          ]
+        }
       },
       "response": {
         "body": {
