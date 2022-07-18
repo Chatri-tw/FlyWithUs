@@ -16,16 +16,16 @@ public class BookingController : ControllerBase
         _logger = logger;
         _bookings = new List<Booking>
         {
-            new Booking{PNR = "BNK48"},
-            new Booking{PNR = "AKB48"},
-            new Booking{PNR = "RGB72"}
+            new Booking{PNR = "BNK48", Firstname = "Alice"},
+            new Booking{PNR = "AKB48", Firstname = "Bob"},
+            new Booking{PNR = "RGB72", Firstname = "Takachi"}
         };
     }
 
     [HttpGet("{pnr}")]
-    public IActionResult Get(string pnr)
+    public IActionResult Get(string pnr, string? firstname)
     {
-        var booking = _bookings.Find(booking => booking.PNR.Equals(pnr));
+        var booking = _bookings.Find(booking => booking.PNR.Equals(pnr) && booking.Firstname.Equals(firstname));
         if (booking != null)
         {
             return Ok(booking);

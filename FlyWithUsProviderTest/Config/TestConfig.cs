@@ -23,7 +23,7 @@ public static class TestConfig
         return  $"{PactRoot}{pactName}.json";
     }
 
-    public static IPactVerifierSource GetPactVerifierSource(ITestOutputHelper output, string providerName)
+    public static IPactVerifierSource GetPactVerifierSource(ITestOutputHelper output, string providerName, string consumerName)
     {
         var config = new PactVerifierConfig
         {
@@ -44,7 +44,8 @@ public static class TestConfig
             .WithPactBrokerSource(new Uri("http://localhost:9292"),
                 options =>
                 {
-                    options.PublishResults("0.0.1", publishOptions =>
+                    options.ConsumerVersionSelectors(new ConsumerVersionSelector { Consumer = consumerName, Latest = true });
+                    options.PublishResults("0.0.3", publishOptions =>
                     {
                         publishOptions.ProviderBranch("main").BuildUri(
                             new Uri("https://example.com/"));

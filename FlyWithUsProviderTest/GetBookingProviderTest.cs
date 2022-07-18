@@ -15,9 +15,17 @@ public class GetBookingProviderTest
     }
 
     [Fact]
-    public void EnsureGetBookingApiPacts()
+    public void EnsureEventApiHonoursPactWithKiosk()
     {
-        var pactVerifier = TestConfig.GetPactVerifierSource(_output, "FlyWithMeGetBooking");
+        var pactVerifier = TestConfig.GetPactVerifierSource(_output, "FlyWithMeGetBooking", "Kiosk");
+        //Act, Assert
+        pactVerifier
+            .Verify();
+    }
+    
+    public void EnsureEventApiHonoursPactWithCounterCheckin()
+    {
+        var pactVerifier = TestConfig.GetPactVerifierSource(_output, "FlyWithMeGetBooking", "CounterCheckin");
         //Act, Assert
         pactVerifier
             .Verify();
